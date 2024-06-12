@@ -1,0 +1,30 @@
+<div class="seccion-inventario">
+  <div class="formulario">
+    <h3>Registrar Nuevo Producto</h3>
+      <hr>
+    <form>
+      <label for="numero-lote">Número de Lote:</label>
+      <input type="text" id="numero-lote" name="numero-lote" required><br>
+
+      <label for="nombre-producto">Nombre del Producto:</label>
+      <input type="text" id="nombre-producto" name="nombre-producto" required><br>
+
+      <label for="precio">Precio:</label>
+      <input type="number" id="precio" name="precio" required><br>
+
+      <label for="cantidad-disponible">Cantidad Disponible:</label>
+      <input type="number" id="cantidad-disponible" name="cantidad-disponible" required><br>
+
+      <h3>Opiniones de los Clientes</h3>
+      <label for="comentario">Comentario:</label><br>
+      <textarea id="comentario" name="comentario"></textarea><br>
+
+      <label for="calificacion">Calificación:</label>
+      <input type="number" id="calificacion" name="calificacion" min="1" max="5"><br>
+
+      <button type="submit">Registrar Producto</button>
+    </form>
+  </div>
+
+
+<app-tabla [data]="inventario"[titulo]="'lista'" [columnas]="columnas"></app-tabla>

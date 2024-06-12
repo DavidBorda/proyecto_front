@@ -1,0 +1,33 @@
+   .contenido {
+     margin: 20px;
+     font-family: Arial, sans-serif;
+     color: #333;
+   }
+
+   /* Estilos para los títulos */
+   .contenido h2,
+   .contenido h3 {
+     margin: 20px 0;
+   }
+
+   /* Estilos para los párrafos */
+   .contenido p {
+     margin: 10px 0;
+   }
+
+   /* Estilos para las listas */
+   .contenido ul {
+     margin-left: 20px;
+     margin-bottom: 20px;
+   }
+
+   .contenido ul li {
+     list-style-type: disc;
+   }
+     hr {
+       border: none;
+       height: 3px;
+       background-color: #ccc;
+       margin: 20px 0;
+       /* Ajusta el margen según sea necesario */
+     }

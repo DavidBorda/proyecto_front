@@ -1,0 +1,30 @@
+ .imagen-1 {
+   width: 30%;
+   float: right;
+   border: 1px solid black;
+   border-radius: 5px;
+   margin-left: 10px;
+   margin-right: 200px;
+ }
+
+ /* Estilos para el contenedor del texto */
+ .texto-contenedor {
+   float: left;
+   max-width: calc(70% - 220px);
+  font-family: Arial, sans-serif;
+   /* El ancho total menos el ancho de la imagen y el margen */
+   /* Ajusta este valor según sea necesario */
+ }
+
+ /* Estilos para el párrafo de texto */
+ .texto-contenedor p {
+   margin: 0;
+   /* Elimina el margen predeterminado del párrafo */
+ }
+    hr {
+      border: none;
+      height: 3px;
+      background-color: #ccc;
+      margin: 20px 0;
+      /* Ajusta el margen según sea necesario */
+    }

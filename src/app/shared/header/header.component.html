@@ -1,0 +1,21 @@
+
+
+<div class="navbar">
+  <nav class="main-menu">
+  <h2>TechInventory</h2>
+
+  @for (menu of menuItems; track $index){
+    <i [class]="menu.icon"></i>
+      <a [class]="menu.classCss" [routerLink]=menu.path>{{menu.title}}</a>
+      @if (menu.submenu?.length){
+        <ul class="submenu">
+          <i [class]="menu.icon"></i>
+          <a [class]="menu.classCss" [routerLink]=menu.path>{{menu.title}}</a>
+
+        </ul>
+      }
+
+
+  }
+</nav>
+</div>
