@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { InicioComponent } from '../inicio/inicio.component';
-import { InventarioComponent } from '../inventario/inventario.component';
+import { InventarioComponent } from '../administrar-inventario/inventario/inventario.component';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -10,6 +10,4 @@ import { RouterLink } from '@angular/router';
   styleUrl: './contacto.component.css',
   imports: [RouterLink],
 })
-export class ContactoComponent {
-
-}
+export class ContactoComponent {}

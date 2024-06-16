@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ContactoComponent } from '../contacto/contacto.component';
-import { InventarioComponent } from '../inventario/inventario.component';
+import { InventarioComponent } from '../administrar-inventario/inventario/inventario.component';
 import { RouterLink } from '@angular/router';
 import Swal from 'sweetalert2';
 

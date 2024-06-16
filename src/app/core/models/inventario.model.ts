@@ -1,15 +1,23 @@
+import { distribuidorInterface } from '../interface/info.interface';
+
 export class InventarioModel {
+  static numeroLote: string;
+  static nombreProducto: string;
+  static CantidadDisponible: number;
+  static Precio: number;
+  static distribuidor: {
+    nit: string;
+    razonSocial: string;
+    telefono: number;
+    direccion: string;
+  };
+  static proveedor: any;
   constructor(
-    public numerLote: string,
+    public numeroLote: string,
     public nombreProducto: string,
-    public precio: number,
-    public distribuidor: {
-      nit: string;
-      razonSocial: string;
-      telefono: number;
-      direccion: string;
-    },
-    public cantidadDisponible: number,
+    public Precio: number,
+    public distribuidor: distribuidorInterface,
+    public CantidadDisponible: number,
     public usuario: {
       _id: string;
       nombre: string;

@@ -9,6 +9,13 @@ export const MenuRoutes: MenuInfoInterface[] = [
     classCss: '',
     submenu: [],
   },
+  {
+    path: PATH.REGISTRO,
+    title: 'Registro',
+    icon: '',
+    classCss: '',
+    submenu: [],
+  },
 
   {
     path: PATH.INVENTARIO,

@@ -1,0 +1,116 @@
+<!-- <div class="seccion-inventario">
+  <div class="formulario">
+    <h3>Registrar Nuevo Producto</h3>
+    <hr>
+    <form>
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="numero-lote">Número de Lote:</label>
+          <input type="text" id="numero-lote" formControlName="numeroLote" required>
+        </div>
+
+        <div class="form-group">
+          <label for="nombre-producto">Nombre del Producto:</label>
+          <input type="text" id="nombre-producto" formControlName="nombreProducto" required>
+        </div>
+
+        <div class="form-group">
+          <label for="precio">Precio:</label>
+          <input type="number" id="precio" formControlName="precio" min="0" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cantidad-disponible">Cantidad Disponible:</label>
+          <input type="number" id="cantidad-disponible" formControlName="cantidadDisponible" min="0" required>
+        </div>
+
+        <div class="form-group">
+          <label for="nit">NIT del Distribuidor:</label>
+          <input type="text" id="nit" formControlName="nit" required>
+        </div>
+
+        <div class="form-group">
+          <label for="razon-social">Razón Social:</label>
+          <input type="text" id="razon-social" formControlName="razonSocial" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono del Distribuidor:</label>
+          <input type="tel" id="telefono" formControlName="telefono" required>
+        </div>
+
+        <div class="form-group">
+          <label for="direccion">Dirección del Distribuidor:</label>
+          <input type="text" id="direccion" formControlName="direccion" required>
+        </div>
+      </div>
+
+      <h3>Opiniones de los Clientes</h3>
+      <div class="form-group">
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" formControlName="comentario"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="calificacion">Calificación:</label>
+        <input type="number" id="calificacion" formControlName="calificacion" min="1" max="5">
+      </div>
+
+      <button>Registrar Producto</button>
+    </form>
+  </div>
+</div> -->
+
+
+<form [formGroup]="productoForm" (ngSubmit)="crearProducto()">
+
+<div class="seccion-inventario">
+  <div class="formulario">
+    <h3>Registrar Nuevo Producto</h3>
+    <hr>
+    <form>
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label">Número de Lote:</label>
+          <input type="text" class="form-control" formControlName="numeroLote" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Nombre del Producto:</label>
+          <input type="text" class="form-control" formControlName="nombreProducto" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Precio:</label>
+          <input type="number" class="form-control" formControlName="precio" min="0" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Cantidad Disponible:</label>
+          <input type="number" class="form-control" formControlName="cantidadDisponible" min="0" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">NIT del Distribuidor:</label>
+          <input type="text" class="form-control" formControlName="nit" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Razón Social:</label>
+          <input type="text" class="form-control" formControlName="razonSocial" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Teléfono del Distribuidor:</label>
+          <input type="number" class="form-control" formControlName="telefono" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Dirección del Distribuidor:</label>
+          <input type="text" class="form-control" formControlName="direccion" required>
+        </div>
+      </div>
+  <button type="submit">Registrar Producto</button>
+
+
+</form>
